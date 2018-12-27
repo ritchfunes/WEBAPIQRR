@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="APPUNDQRModelStoreContainer" CdmEntityContainer="APPUNDQREntities">
+    <EntitySetMapping Name="Salestable">
+      <EntityTypeMapping TypeName="APPUNDQRModel.Salestable">
+        <MappingFragment StoreEntitySet="Salestable">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Cabezal" ColumnName="Cabezal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

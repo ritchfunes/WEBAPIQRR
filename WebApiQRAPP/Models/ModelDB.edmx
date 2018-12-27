@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="APPUNDQRModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="EQUIPOSASIGNACIONTEMP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CABEZALNOMBRE" Type="varchar" MaxLength="100" />
+          <Property Name="CABEZALPLACA" Type="varchar" MaxLength="100" />
+          <Property Name="CABEZALPEROPERACION" Type="bit" />
+          <Property Name="CABEZALFECHAOPERACION" Type="date" />
+          <Property Name="CABEZALLICENCIA" Type="bit" />
+          <Property Name="CABEZALBOLETAREVISION" Type="bit" />
+          <Property Name="CABEZALFECHABOLETAREVIISON" Type="date" />
+          <Property Name="CABEZALEXTINTOR" Type="bit" />
+          <Property Name="CABEZALFECHAEXTINTOR" Type="date" />
+          <Property Name="CABEZALCANTIDADEXTINTOR" Type="int" />
+          <Property Name="CABEZALPALA" Type="bit" />
+          <Property Name="CABEZALABOSRVENTE" Type="bit" />
+          <Property Name="CABEZALTACO" Type="bit" />
+          <Property Name="CABEZALCUNIA" Type="bit" />
+          <Property Name="CABEZALMARTILLO" Type="bit" />
+          <Property Name="CABEZALEXPOXY" Type="bit" />
+          <Property Name="CABEZALCUNSEG" Type="bit" />
+          <Property Name="CABEZALCANTIDADCUNSEG" Type="int" />
+          <Property Name="CABEZALBOTIQUIN" Type="bit" />
+          <Property Name="CABEZALFOCO" Type="bit" />
+          <Property Name="CABEZALLLANTAS" Type="bit" />
+          <Property Name="CABEZALLUCES" Type="bit" />
+          <Property Name="CABEZALSNFUGAS" Type="bit" />
+          <Property Name="CABEZALCHASIS" Type="bit" />
+          <Property Name="CABEZALCINTURON" Type="bit" />
+          <Property Name="CABEZALMASSHITCH" Type="bit" />
+          <Property Name="CABEZALALARMA" Type="bit" />
+          <Property Name="CABEZALGPS" Type="bit" />
+          <Property Name="CABEZALINTCABINA" Type="bit" />
+          <Property Name="CABEZALEXTCARROCERIA" Type="bit" />
+          <Property Name="CABEZALLIMPIEZA" Type="bit" />
+          <Property Name="CABEZALPARLANTES" Type="bit" />
+          <Property Name="CABEZALCANTIDADPARLANTES" Type="int" />
+          <Property Name="CABEZALRADIO" Type="bit" />
+          <Property Name="CABEZALCANTIDADRADIO" Type="int" />
+          <Property Name="CABEZALCOLCHON" Type="bit" />
+          <Property Name="CABEZALTAPIZADO" Type="bit" />
+          <Property Name="CISTERNANOMBRE" Type="varchar" MaxLength="100" />
+          <Property Name="CISTERNAPLACA" Type="varchar" MaxLength="100" />
+          <Property Name="CISTERNAPEROPERACION" Type="bit" />
+          <Property Name="CISTERNAFECHAOPERACION" Type="date" />
+          <Property Name="CISTERNAREVISION" Type="bit" />
+          <Property Name="CISTERNAFECHAREVISION" Type="date" />
+          <Property Name="CISTERNACALIBRACION" Type="bit" />
+          <Property Name="CISTERNAEXTINTOR" Type="bit" />
+          <Property Name="CISTERNAEXTINTORA" Type="date" />
+          <Property Name="CISTERNAEXTINTORB" Type="date" />
+          <Property Name="CISTERNACUBETA" Type="bit" />
+          <Property Name="CISTERNAEMBUDO" Type="bit" />
+          <Property Name="CISTERNATIGHFILL" Type="bit" />
+          <Property Name="CISTERNACONO" Type="bit" />
+          <Property Name="CISTERNACANTIDADCONO" Type="int" />
+          <Property Name="CISTERNAMANGUERAS" Type="bit" />
+          <Property Name="CISTERNACANTIDADMANGUERAS" Type="int" />
+          <Property Name="CISTERNALLANTAS" Type="bit" />
+          <Property Name="CISTERNACHASIS" Type="bit" />
+          <Property Name="CISTERNAGRADAS" Type="bit" />
+          <Property Name="CISTERNALINEAS" Type="bit" />
+          <Property Name="CISTERNACINTA" Type="bit" />
+          <Property Name="CISTERNAMANHOLES" Type="bit" />
+          <Property Name="CISTERNALODERAS" Type="bit" />
+          <Property Name="CISTERNATERMINALES" Type="bit" />
+          <Property Name="CISTERNALUCES" Type="bit" />
+          <Property Name="CISTERNACONDUCTORES" Type="bit" />
+          <Property Name="CISTERNAESTMANGUERA" Type="bit" />
+          <Property Name="CISTERNATANQUE" Type="bit" />
+        </EntityType>
+        <EntityType Name="Salestable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Cabezal" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityContainer Name="APPUNDQRModelStoreContainer">
+          <EntitySet Name="EQUIPOSASIGNACIONTEMP" EntityType="Self.EQUIPOSASIGNACIONTEMP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Salestable" EntityType="Self.Salestable" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="APPUNDQRModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Salestable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cabezal" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="APPUNDQREntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Salestable" EntityType="Self.Salestable" />
+          <EntitySet Name="EQUIPOSASIGNACIONTEMP" EntityType="APPUNDQRModel.EQUIPOSASIGNACIONTEMP" />
+        </EntityContainer>
+        <EntityType Name="EQUIPOSASIGNACIONTEMP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CABEZALNOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CABEZALPLACA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CABEZALPEROPERACION" Type="Boolean" />
+          <Property Name="CABEZALFECHAOPERACION" Type="DateTime" Precision="0" />
+          <Property Name="CABEZALLICENCIA" Type="Boolean" />
+          <Property Name="CABEZALBOLETAREVISION" Type="Boolean" />
+          <Property Name="CABEZALFECHABOLETAREVIISON" Type="DateTime" Precision="0" />
+          <Property Name="CABEZALEXTINTOR" Type="Boolean" />
+          <Property Name="CABEZALFECHAEXTINTOR" Type="DateTime" Precision="0" />
+          <Property Name="CABEZALCANTIDADEXTINTOR" Type="Int32" />
+          <Property Name="CABEZALPALA" Type="Boolean" />
+          <Property Name="CABEZALABOSRVENTE" Type="Boolean" />
+          <Property Name="CABEZALTACO" Type="Boolean" />
+          <Property Name="CABEZALCUNIA" Type="Boolean" />
+          <Property Name="CABEZALMARTILLO" Type="Boolean" />
+          <Property Name="CABEZALEXPOXY" Type="Boolean" />
+          <Property Name="CABEZALCUNSEG" Type="Boolean" />
+          <Property Name="CABEZALCANTIDADCUNSEG" Type="Int32" />
+          <Property Name="CABEZALBOTIQUIN" Type="Boolean" />
+          <Property Name="CABEZALFOCO" Type="Boolean" />
+          <Property Name="CABEZALLLANTAS" Type="Boolean" />
+          <Property Name="CABEZALLUCES" Type="Boolean" />
+          <Property Name="CABEZALSNFUGAS" Type="Boolean" />
+          <Property Name="CABEZALCHASIS" Type="Boolean" />
+          <Property Name="CABEZALCINTURON" Type="Boolean" />
+          <Property Name="CABEZALMASSHITCH" Type="Boolean" />
+          <Property Name="CABEZALALARMA" Type="Boolean" />
+          <Property Name="CABEZALGPS" Type="Boolean" />
+          <Property Name="CABEZALINTCABINA" Type="Boolean" />
+          <Property Name="CABEZALEXTCARROCERIA" Type="Boolean" />
+          <Property Name="CABEZALLIMPIEZA" Type="Boolean" />
+          <Property Name="CABEZALPARLANTES" Type="Boolean" />
+          <Property Name="CABEZALCANTIDADPARLANTES" Type="Int32" />
+          <Property Name="CABEZALRADIO" Type="Boolean" />
+          <Property Name="CABEZALCANTIDADRADIO" Type="Int32" />
+          <Property Name="CABEZALCOLCHON" Type="Boolean" />
+          <Property Name="CABEZALTAPIZADO" Type="Boolean" />
+          <Property Name="CISTERNANOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CISTERNAPLACA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CISTERNAPEROPERACION" Type="Boolean" />
+          <Property Name="CISTERNAFECHAOPERACION" Type="DateTime" Precision="0" />
+          <Property Name="CISTERNAREVISION" Type="Boolean" />
+          <Property Name="CISTERNAFECHAREVISION" Type="DateTime" Precision="0" />
+          <Property Name="CISTERNACALIBRACION" Type="Boolean" />
+          <Property Name="CISTERNAEXTINTOR" Type="Boolean" />
+          <Property Name="CISTERNAEXTINTORA" Type="DateTime" Precision="0" />
+          <Property Name="CISTERNAEXTINTORB" Type="DateTime" Precision="0" />
+          <Property Name="CISTERNACUBETA" Type="Boolean" />
+          <Property Name="CISTERNAEMBUDO" Type="Boolean" />
+          <Property Name="CISTERNATIGHFILL" Type="Boolean" />
+          <Property Name="CISTERNACONO" Type="Boolean" />
+          <Property Name="CISTERNACANTIDADCONO" Type="Int32" />
+          <Property Name="CISTERNAMANGUERAS" Type="Boolean" />
+          <Property Name="CISTERNACANTIDADMANGUERAS" Type="Int32" />
+          <Property Name="CISTERNALLANTAS" Type="Boolean" />
+          <Property Name="CISTERNACHASIS" Type="Boolean" />
+          <Property Name="CISTERNAGRADAS" Type="Boolean" />
+          <Property Name="CISTERNALINEAS" Type="Boolean" />
+          <Property Name="CISTERNACINTA" Type="Boolean" />
+          <Property Name="CISTERNAMANHOLES" Type="Boolean" />
+          <Property Name="CISTERNALODERAS" Type="Boolean" />
+          <Property Name="CISTERNATERMINALES" Type="Boolean" />
+          <Property Name="CISTERNALUCES" Type="Boolean" />
+          <Property Name="CISTERNACONDUCTORES" Type="Boolean" />
+          <Property Name="CISTERNAESTMANGUERA" Type="Boolean" />
+          <Property Name="CISTERNATANQUE" Type="Boolean" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="APPUNDQRModelStoreContainer" CdmEntityContainer="APPUNDQREntities">
+          <EntitySetMapping Name="Salestable">
+            <EntityTypeMapping TypeName="APPUNDQRModel.Salestable">
+              <MappingFragment StoreEntitySet="Salestable">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Cabezal" ColumnName="Cabezal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EQUIPOSASIGNACIONTEMP">
+            <EntityTypeMapping TypeName="APPUNDQRModel.EQUIPOSASIGNACIONTEMP">
+              <MappingFragment StoreEntitySet="EQUIPOSASIGNACIONTEMP">
+                <ScalarProperty Name="CISTERNATANQUE" ColumnName="CISTERNATANQUE" />
+                <ScalarProperty Name="CISTERNAESTMANGUERA" ColumnName="CISTERNAESTMANGUERA" />
+                <ScalarProperty Name="CISTERNACONDUCTORES" ColumnName="CISTERNACONDUCTORES" />
+                <ScalarProperty Name="CISTERNALUCES" ColumnName="CISTERNALUCES" />
+                <ScalarProperty Name="CISTERNATERMINALES" ColumnName="CISTERNATERMINALES" />
+                <ScalarProperty Name="CISTERNALODERAS" ColumnName="CISTERNALODERAS" />
+                <ScalarProperty Name="CISTERNAMANHOLES" ColumnName="CISTERNAMANHOLES" />
+                <ScalarProperty Name="CISTERNACINTA" ColumnName="CISTERNACINTA" />
+                <ScalarProperty Name="CISTERNALINEAS" ColumnName="CISTERNALINEAS" />
+                <ScalarProperty Name="CISTERNAGRADAS" ColumnName="CISTERNAGRADAS" />
+                <ScalarProperty Name="CISTERNACHASIS" ColumnName="CISTERNACHASIS" />
+                <ScalarProperty Name="CISTERNALLANTAS" ColumnName="CISTERNALLANTAS" />
+                <ScalarProperty Name="CISTERNACANTIDADMANGUERAS" ColumnName="CISTERNACANTIDADMANGUERAS" />
+                <ScalarProperty Name="CISTERNAMANGUERAS" ColumnName="CISTERNAMANGUERAS" />
+                <ScalarProperty Name="CISTERNACANTIDADCONO" ColumnName="CISTERNACANTIDADCONO" />
+                <ScalarProperty Name="CISTERNACONO" ColumnName="CISTERNACONO" />
+                <ScalarProperty Name="CISTERNATIGHFILL" ColumnName="CISTERNATIGHFILL" />
+                <ScalarProperty Name="CISTERNAEMBUDO" ColumnName="CISTERNAEMBUDO" />
+                <ScalarProperty Name="CISTERNACUBETA" ColumnName="CISTERNACUBETA" />
+                <ScalarProperty Name="CISTERNAEXTINTORB" ColumnName="CISTERNAEXTINTORB" />
+                <ScalarProperty Name="CISTERNAEXTINTORA" ColumnName="CISTERNAEXTINTORA" />
+                <ScalarProperty Name="CISTERNAEXTINTOR" ColumnName="CISTERNAEXTINTOR" />
+                <ScalarProperty Name="CISTERNACALIBRACION" ColumnName="CISTERNACALIBRACION" />
+                <ScalarProperty Name="CISTERNAFECHAREVISION" ColumnName="CISTERNAFECHAREVISION" />
+                <ScalarProperty Name="CISTERNAREVISION" ColumnName="CISTERNAREVISION" />
+                <ScalarProperty Name="CISTERNAFECHAOPERACION" ColumnName="CISTERNAFECHAOPERACION" />
+                <ScalarProperty Name="CISTERNAPEROPERACION" ColumnName="CISTERNAPEROPERACION" />
+                <ScalarProperty Name="CISTERNAPLACA" ColumnName="CISTERNAPLACA" />
+                <ScalarProperty Name="CISTERNANOMBRE" ColumnName="CISTERNANOMBRE" />
+                <ScalarProperty Name="CABEZALTAPIZADO" ColumnName="CABEZALTAPIZADO" />
+                <ScalarProperty Name="CABEZALCOLCHON" ColumnName="CABEZALCOLCHON" />
+                <ScalarProperty Name="CABEZALCANTIDADRADIO" ColumnName="CABEZALCANTIDADRADIO" />
+                <ScalarProperty Name="CABEZALRADIO" ColumnName="CABEZALRADIO" />
+                <ScalarProperty Name="CABEZALCANTIDADPARLANTES" ColumnName="CABEZALCANTIDADPARLANTES" />
+                <ScalarProperty Name="CABEZALPARLANTES" ColumnName="CABEZALPARLANTES" />
+                <ScalarProperty Name="CABEZALLIMPIEZA" ColumnName="CABEZALLIMPIEZA" />
+                <ScalarProperty Name="CABEZALEXTCARROCERIA" ColumnName="CABEZALEXTCARROCERIA" />
+                <ScalarProperty Name="CABEZALINTCABINA" ColumnName="CABEZALINTCABINA" />
+                <ScalarProperty Name="CABEZALGPS" ColumnName="CABEZALGPS" />
+                <ScalarProperty Name="CABEZALALARMA" ColumnName="CABEZALALARMA" />
+                <ScalarProperty Name="CABEZALMASSHITCH" ColumnName="CABEZALMASSHITCH" />
+                <ScalarProperty Name="CABEZALCINTURON" ColumnName="CABEZALCINTURON" />
+                <ScalarProperty Name="CABEZALCHASIS" ColumnName="CABEZALCHASIS" />
+                <ScalarProperty Name="CABEZALSNFUGAS" ColumnName="CABEZALSNFUGAS" />
+                <ScalarProperty Name="CABEZALLUCES" ColumnName="CABEZALLUCES" />
+                <ScalarProperty Name="CABEZALLLANTAS" ColumnName="CABEZALLLANTAS" />
+                <ScalarProperty Name="CABEZALFOCO" ColumnName="CABEZALFOCO" />
+                <ScalarProperty Name="CABEZALBOTIQUIN" ColumnName="CABEZALBOTIQUIN" />
+                <ScalarProperty Name="CABEZALCANTIDADCUNSEG" ColumnName="CABEZALCANTIDADCUNSEG" />
+                <ScalarProperty Name="CABEZALCUNSEG" ColumnName="CABEZALCUNSEG" />
+                <ScalarProperty Name="CABEZALEXPOXY" ColumnName="CABEZALEXPOXY" />
+                <ScalarProperty Name="CABEZALMARTILLO" ColumnName="CABEZALMARTILLO" />
+                <ScalarProperty Name="CABEZALCUNIA" ColumnName="CABEZALCUNIA" />
+                <ScalarProperty Name="CABEZALTACO" ColumnName="CABEZALTACO" />
+                <ScalarProperty Name="CABEZALABOSRVENTE" ColumnName="CABEZALABOSRVENTE" />
+                <ScalarProperty Name="CABEZALPALA" ColumnName="CABEZALPALA" />
+                <ScalarProperty Name="CABEZALCANTIDADEXTINTOR" ColumnName="CABEZALCANTIDADEXTINTOR" />
+                <ScalarProperty Name="CABEZALFECHAEXTINTOR" ColumnName="CABEZALFECHAEXTINTOR" />
+                <ScalarProperty Name="CABEZALEXTINTOR" ColumnName="CABEZALEXTINTOR" />
+                <ScalarProperty Name="CABEZALFECHABOLETAREVIISON" ColumnName="CABEZALFECHABOLETAREVIISON" />
+                <ScalarProperty Name="CABEZALBOLETAREVISION" ColumnName="CABEZALBOLETAREVISION" />
+                <ScalarProperty Name="CABEZALLICENCIA" ColumnName="CABEZALLICENCIA" />
+                <ScalarProperty Name="CABEZALFECHAOPERACION" ColumnName="CABEZALFECHAOPERACION" />
+                <ScalarProperty Name="CABEZALPEROPERACION" ColumnName="CABEZALPEROPERACION" />
+                <ScalarProperty Name="CABEZALPLACA" ColumnName="CABEZALPLACA" />
+                <ScalarProperty Name="CABEZALNOMBRE" ColumnName="CABEZALNOMBRE" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

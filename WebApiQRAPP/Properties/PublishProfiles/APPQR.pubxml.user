@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIdWStgnFYEiyGUvPdYI3eQAAAAACAAAAAAAQZgAAAAEAACAAAADAQsnHOfVoaWYGy+KOjdH4exbgP5XvEriqqqPG/AUYTgAAAAAOgAAAAAIAACAAAADxCwBBp0Jo3m5wlRfhABn5eZBV1YgV5wfu+GS8n8WyQiAAAAD68ME+/7/vQqWXzi78wzUMjpbKIX0Xl7sStB0Acm0WEEAAAAC2kMe45uUUcpwV23tzazihu9CX3CDlp7KvkuefxY8+XtXZjzwNY1RBia+dldn/FkzUhqhAVwPcH+HyNEma0S4U</EncryptedPassword>
+    <_PublishTargetUrl>ftp://apiqrapp.somee.com/d:\DZHosts\LocalUser\rfunes10\www.APIQRAPP.somee.com</_PublishTargetUrl>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="APPUNDQRModelStoreContainer" CdmEntityContainer="APPUNDQREntities">
+    <EntitySetMapping Name="Salestable">
+      <EntityTypeMapping TypeName="APPUNDQRModel.Salestable">
+        <MappingFragment StoreEntitySet="Salestable">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Cabezal" ColumnName="Cabezal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EQUIPOSASIGNACIONTEMP">
+      <EntityTypeMapping TypeName="APPUNDQRModel.EQUIPOSASIGNACIONTEMP">
+        <MappingFragment StoreEntitySet="EQUIPOSASIGNACIONTEMP">
+          <ScalarProperty Name="CISTERNATANQUE" ColumnName="CISTERNATANQUE" />
+          <ScalarProperty Name="CISTERNAESTMANGUERA" ColumnName="CISTERNAESTMANGUERA" />
+          <ScalarProperty Name="CISTERNACONDUCTORES" ColumnName="CISTERNACONDUCTORES" />
+          <ScalarProperty Name="CISTERNALUCES" ColumnName="CISTERNALUCES" />
+          <ScalarProperty Name="CISTERNATERMINALES" ColumnName="CISTERNATERMINALES" />
+          <ScalarProperty Name="CISTERNALODERAS" ColumnName="CISTERNALODERAS" />
+          <ScalarProperty Name="CISTERNAMANHOLES" ColumnName="CISTERNAMANHOLES" />
+          <ScalarProperty Name="CISTERNACINTA" ColumnName="CISTERNACINTA" />
+          <ScalarProperty Name="CISTERNALINEAS" ColumnName="CISTERNALINEAS" />
+          <ScalarProperty Name="CISTERNAGRADAS" ColumnName="CISTERNAGRADAS" />
+          <ScalarProperty Name="CISTERNACHASIS" ColumnName="CISTERNACHASIS" />
+          <ScalarProperty Name="CISTERNALLANTAS" ColumnName="CISTERNALLANTAS" />
+          <ScalarProperty Name="CISTERNACANTIDADMANGUERAS" ColumnName="CISTERNACANTIDADMANGUERAS" />
+          <ScalarProperty Name="CISTERNAMANGUERAS" ColumnName="CISTERNAMANGUERAS" />
+          <ScalarProperty Name="CISTERNACANTIDADCONO" ColumnName="CISTERNACANTIDADCONO" />
+          <ScalarProperty Name="CISTERNACONO" ColumnName="CISTERNACONO" />
+          <ScalarProperty Name="CISTERNATIGHFILL" ColumnName="CISTERNATIGHFILL" />
+          <ScalarProperty Name="CISTERNAEMBUDO" ColumnName="CISTERNAEMBUDO" />
+          <ScalarProperty Name="CISTERNACUBETA" ColumnName="CISTERNACUBETA" />
+          <ScalarProperty Name="CISTERNAEXTINTORB" ColumnName="CISTERNAEXTINTORB" />
+          <ScalarProperty Name="CISTERNAEXTINTORA" ColumnName="CISTERNAEXTINTORA" />
+          <ScalarProperty Name="CISTERNAEXTINTOR" ColumnName="CISTERNAEXTINTOR" />
+          <ScalarProperty Name="CISTERNACALIBRACION" ColumnName="CISTERNACALIBRACION" />
+          <ScalarProperty Name="CISTERNAFECHAREVISION" ColumnName="CISTERNAFECHAREVISION" />
+          <ScalarProperty Name="CISTERNAREVISION" ColumnName="CISTERNAREVISION" />
+          <ScalarProperty Name="CISTERNAFECHAOPERACION" ColumnName="CISTERNAFECHAOPERACION" />
+          <ScalarProperty Name="CISTERNAPEROPERACION" ColumnName="CISTERNAPEROPERACION" />
+          <ScalarProperty Name="CISTERNAPLACA" ColumnName="CISTERNAPLACA" />
+          <ScalarProperty Name="CISTERNANOMBRE" ColumnName="CISTERNANOMBRE" />
+          <ScalarProperty Name="CABEZALTAPIZADO" ColumnName="CABEZALTAPIZADO" />
+          <ScalarProperty Name="CABEZALCOLCHON" ColumnName="CABEZALCOLCHON" />
+          <ScalarProperty Name="CABEZALCANTIDADRADIO" ColumnName="CABEZALCANTIDADRADIO" />
+          <ScalarProperty Name="CABEZALRADIO" ColumnName="CABEZALRADIO" />
+          <ScalarProperty Name="CABEZALCANTIDADPARLANTES" ColumnName="CABEZALCANTIDADPARLANTES" />
+          <ScalarProperty Name="CABEZALPARLANTES" ColumnName="CABEZALPARLANTES" />
+          <ScalarProperty Name="CABEZALLIMPIEZA" ColumnName="CABEZALLIMPIEZA" />
+          <ScalarProperty Name="CABEZALEXTCARROCERIA" ColumnName="CABEZALEXTCARROCERIA" />
+          <ScalarProperty Name="CABEZALINTCABINA" ColumnName="CABEZALINTCABINA" />
+          <ScalarProperty Name="CABEZALGPS" ColumnName="CABEZALGPS" />
+          <ScalarProperty Name="CABEZALALARMA" ColumnName="CABEZALALARMA" />
+          <ScalarProperty Name="CABEZALMASSHITCH" ColumnName="CABEZALMASSHITCH" />
+          <ScalarProperty Name="CABEZALCINTURON" ColumnName="CABEZALCINTURON" />
+          <ScalarProperty Name="CABEZALCHASIS" ColumnName="CABEZALCHASIS" />
+          <ScalarProperty Name="CABEZALSNFUGAS" ColumnName="CABEZALSNFUGAS" />
+          <ScalarProperty Name="CABEZALLUCES" ColumnName="CABEZALLUCES" />
+          <ScalarProperty Name="CABEZALLLANTAS" ColumnName="CABEZALLLANTAS" />
+          <ScalarProperty Name="CABEZALFOCO" ColumnName="CABEZALFOCO" />
+          <ScalarProperty Name="CABEZALBOTIQUIN" ColumnName="CABEZALBOTIQUIN" />
+          <ScalarProperty Name="CABEZALCANTIDADCUNSEG" ColumnName="CABEZALCANTIDADCUNSEG" />
+          <ScalarProperty Name="CABEZALCUNSEG" ColumnName="CABEZALCUNSEG" />
+          <ScalarProperty Name="CABEZALEXPOXY" ColumnName="CABEZALEXPOXY" />
+          <ScalarProperty Name="CABEZALMARTILLO" ColumnName="CABEZALMARTILLO" />
+          <ScalarProperty Name="CABEZALCUNIA" ColumnName="CABEZALCUNIA" />
+          <ScalarProperty Name="CABEZALTACO" ColumnName="CABEZALTACO" />
+          <ScalarProperty Name="CABEZALABOSRVENTE" ColumnName="CABEZALABOSRVENTE" />
+          <ScalarProperty Name="CABEZALPALA" ColumnName="CABEZALPALA" />
+          <ScalarProperty Name="CABEZALCANTIDADEXTINTOR" ColumnName="CABEZALCANTIDADEXTINTOR" />
+          <ScalarProperty Name="CABEZALFECHAEXTINTOR" ColumnName="CABEZALFECHAEXTINTOR" />
+          <ScalarProperty Name="CABEZALEXTINTOR" ColumnName="CABEZALEXTINTOR" />
+          <ScalarProperty Name="CABEZALFECHABOLETAREVIISON" ColumnName="CABEZALFECHABOLETAREVIISON" />
+          <ScalarProperty Name="CABEZALBOLETAREVISION" ColumnName="CABEZALBOLETAREVISION" />
+          <ScalarProperty Name="CABEZALLICENCIA" ColumnName="CABEZALLICENCIA" />
+          <ScalarProperty Name="CABEZALFECHAOPERACION" ColumnName="CABEZALFECHAOPERACION" />
+          <ScalarProperty Name="CABEZALPEROPERACION" ColumnName="CABEZALPEROPERACION" />
+          <ScalarProperty Name="CABEZALPLACA" ColumnName="CABEZALPLACA" />
+          <ScalarProperty Name="CABEZALNOMBRE" ColumnName="CABEZALNOMBRE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

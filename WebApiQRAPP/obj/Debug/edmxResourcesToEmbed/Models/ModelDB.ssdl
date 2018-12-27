@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="APPUNDQRModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EQUIPOSASIGNACIONTEMP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CABEZALNOMBRE" Type="varchar" MaxLength="100" />
+    <Property Name="CABEZALPLACA" Type="varchar" MaxLength="100" />
+    <Property Name="CABEZALPEROPERACION" Type="bit" />
+    <Property Name="CABEZALFECHAOPERACION" Type="date" />
+    <Property Name="CABEZALLICENCIA" Type="bit" />
+    <Property Name="CABEZALBOLETAREVISION" Type="bit" />
+    <Property Name="CABEZALFECHABOLETAREVIISON" Type="date" />
+    <Property Name="CABEZALEXTINTOR" Type="bit" />
+    <Property Name="CABEZALFECHAEXTINTOR" Type="date" />
+    <Property Name="CABEZALCANTIDADEXTINTOR" Type="int" />
+    <Property Name="CABEZALPALA" Type="bit" />
+    <Property Name="CABEZALABOSRVENTE" Type="bit" />
+    <Property Name="CABEZALTACO" Type="bit" />
+    <Property Name="CABEZALCUNIA" Type="bit" />
+    <Property Name="CABEZALMARTILLO" Type="bit" />
+    <Property Name="CABEZALEXPOXY" Type="bit" />
+    <Property Name="CABEZALCUNSEG" Type="bit" />
+    <Property Name="CABEZALCANTIDADCUNSEG" Type="int" />
+    <Property Name="CABEZALBOTIQUIN" Type="bit" />
+    <Property Name="CABEZALFOCO" Type="bit" />
+    <Property Name="CABEZALLLANTAS" Type="bit" />
+    <Property Name="CABEZALLUCES" Type="bit" />
+    <Property Name="CABEZALSNFUGAS" Type="bit" />
+    <Property Name="CABEZALCHASIS" Type="bit" />
+    <Property Name="CABEZALCINTURON" Type="bit" />
+    <Property Name="CABEZALMASSHITCH" Type="bit" />
+    <Property Name="CABEZALALARMA" Type="bit" />
+    <Property Name="CABEZALGPS" Type="bit" />
+    <Property Name="CABEZALINTCABINA" Type="bit" />
+    <Property Name="CABEZALEXTCARROCERIA" Type="bit" />
+    <Property Name="CABEZALLIMPIEZA" Type="bit" />
+    <Property Name="CABEZALPARLANTES" Type="bit" />
+    <Property Name="CABEZALCANTIDADPARLANTES" Type="int" />
+    <Property Name="CABEZALRADIO" Type="bit" />
+    <Property Name="CABEZALCANTIDADRADIO" Type="int" />
+    <Property Name="CABEZALCOLCHON" Type="bit" />
+    <Property Name="CABEZALTAPIZADO" Type="bit" />
+    <Property Name="CISTERNANOMBRE" Type="varchar" MaxLength="100" />
+    <Property Name="CISTERNAPLACA" Type="varchar" MaxLength="100" />
+    <Property Name="CISTERNAPEROPERACION" Type="bit" />
+    <Property Name="CISTERNAFECHAOPERACION" Type="date" />
+    <Property Name="CISTERNAREVISION" Type="bit" />
+    <Property Name="CISTERNAFECHAREVISION" Type="date" />
+    <Property Name="CISTERNACALIBRACION" Type="bit" />
+    <Property Name="CISTERNAEXTINTOR" Type="bit" />
+    <Property Name="CISTERNAEXTINTORA" Type="date" />
+    <Property Name="CISTERNAEXTINTORB" Type="date" />
+    <Property Name="CISTERNACUBETA" Type="bit" />
+    <Property Name="CISTERNAEMBUDO" Type="bit" />
+    <Property Name="CISTERNATIGHFILL" Type="bit" />
+    <Property Name="CISTERNACONO" Type="bit" />
+    <Property Name="CISTERNACANTIDADCONO" Type="int" />
+    <Property Name="CISTERNAMANGUERAS" Type="bit" />
+    <Property Name="CISTERNACANTIDADMANGUERAS" Type="int" />
+    <Property Name="CISTERNALLANTAS" Type="bit" />
+    <Property Name="CISTERNACHASIS" Type="bit" />
+    <Property Name="CISTERNAGRADAS" Type="bit" />
+    <Property Name="CISTERNALINEAS" Type="bit" />
+    <Property Name="CISTERNACINTA" Type="bit" />
+    <Property Name="CISTERNAMANHOLES" Type="bit" />
+    <Property Name="CISTERNALODERAS" Type="bit" />
+    <Property Name="CISTERNATERMINALES" Type="bit" />
+    <Property Name="CISTERNALUCES" Type="bit" />
+    <Property Name="CISTERNACONDUCTORES" Type="bit" />
+    <Property Name="CISTERNAESTMANGUERA" Type="bit" />
+    <Property Name="CISTERNATANQUE" Type="bit" />
+  </EntityType>
+  <EntityType Name="Salestable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cabezal" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="APPUNDQRModelStoreContainer">
+    <EntitySet Name="EQUIPOSASIGNACIONTEMP" EntityType="Self.EQUIPOSASIGNACIONTEMP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Salestable" EntityType="Self.Salestable" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
